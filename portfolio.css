@@ -14,22 +14,18 @@ a {
 .site-header {
   position:fixed;
   z-index:20;
-  top:0;
+  top: 0;
   left:0;
   width:100%;
   height:88px;
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:0 2vw;
-  background: rgba(110, 203, 226, 0.336);
+  padding:0 0;
+  background: rgba(101, 137, 179, 0.479);
   border-bottom:1px solid transparent;
-  border-bottom-right-radius: 600px;
-  border-bottom-left-radius: 80px;
+  border-radius: 10px;
   transition: background .3s ease, height .3s ease, border-color .3s ease;
-}
-.site-shell {
-    margin-top: 90px;
 }
 .site-header.is-scrolled {
     height: 70px;
@@ -38,6 +34,10 @@ a {
     box-shadow: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.5),
     inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
 }
+.site-shell {
+    margin-top: 90px;
+}
+
 body {
     background-color: rgba(110, 203, 226, 0.88);
     background-image: url(Background.jpg);
@@ -47,59 +47,22 @@ body {
     background-size:cover;
 }
 #Home {
-    margin: 3px 10px;
-    block-size: 600px;
-    backdrop-filter: blur(4px);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border: 1px solid rgba(128, 236, 255, 0.24);
-    border-radius: 50px;
-    background:
-    radial-gradient(circle, rgba(255, 0, 0, 0) 80%, rgba(255,255,255,0.5) 100%) border-box;
+    background-color: #429EFC93;
+    
 }
 #Sobre {
-    margin: 3px 10px;
-    block-size: 600px;
-    backdrop-filter: blur(4px);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border: 1px solid rgba(128, 236, 255, 0.24);
-    border-radius: 50px;
-    background:
-    radial-gradient(circle, rgba(255, 0, 0, 0) 80%, rgba(255,255,255,0.5) 100%) border-box;
+    background-color: #429EFC93;
 }
 #Trabalhos {
-    margin: 3px 10px;
-    block-size: 600px;
-    backdrop-filter: blur(4px);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border: 1px solid rgba(128, 236, 255, 0.24);
-    border-radius: 50px;
-    background:
-    radial-gradient(circle, rgba(255, 0, 0, 0) 80%, rgba(255,255,255,0.5) 100%) border-box;
+    background-color: #429EFC93;
+    margin-bottom: 20px;
 }
 #Experiências {
-    margin: 3px 10px;
-    block-size: 600px;
-    backdrop-filter: blur(4px);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border: 1px solid rgba(128, 236, 255, 0.24);
-    border-radius: 50px;
-    background:
-    radial-gradient(circle, rgba(255, 0, 0, 0) 80%, rgba(255,255,255,0.5) 100%) border-box;
+    background-color: #429EFC93;
 }
 #CONTATO {
+    background-color: #3DFC6193;
     margin: 3px 10px;
-    block-size: 600px;
-    backdrop-filter: blur(4px);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border: 1px solid rgba(128, 168, 255, 0.24);
-    border-radius: 50px;
-    background:
-    radial-gradient(circle, rgba(255, 0, 0, 0) 80%, rgba(255,255,255,0.5) 100%) border-box;
     font-size: 40px;
     text-align: center;
 }
@@ -108,10 +71,11 @@ h1 {
     text-shadow: 3px 4px 8px black;
     font-size: 45px;
     margin: 50px;
+    padding: 50px;
     text-align: center;
 }
 h2 {
-    -webkit-text-fill-color: rgb(231, 231, 231);
+    -webkit-text-fill-color: white;
     text-shadow: 3px 4px 4px black;
 }
 p {
@@ -121,10 +85,18 @@ p {
     text-shadow: 3px 4px 4px black;
 }
 section {
-    margin: 0px;
+    margin: 3px 10px;
+    block-size: 600px;
+    backdrop-filter: blur(4px);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border: 1px solid rgba(128, 236, 255, 0.24);
+    border-radius: 50px;
+    background:
+    radial-gradient(ellipse, rgba(255, 0, 0, 0) 60%, rgba(255,255,255,0.5) 100%) border-box;
 }
 .title {
-    -webkit-text-fill-color: rgb(255, 255, 255);
+    -webkit-text-fill-color: white;
     text-shadow: 3px 4px 8px black;
     font-size: 45px;
     margin: 50px;
@@ -142,6 +114,7 @@ section {
     text-shadow: 3px 4px 4px black;
 }
 .name {
+    padding: 40px;
     font-size: 2rem;
     font-weight: bold;
     -webkit-text-fill-color: black;
@@ -166,21 +139,50 @@ section {
 }
 .button:hover {
     transform: scale(1.06);
-    background-color: rgba(0, 132, 255, 0.137);
 }
 .button:active {
     transform: scale(0.98);
 }
+#button1 {
+    background-color: #ffffff23;
+    transition: transform 0.3s, background-color 0.7s;
+}
+#button1:hover {
+    background-color: #1e8fff24;
+}
+#button2 {
+    background-color: #ffffff23;
+    transition: transform 0.3s, background-color 0.7s;
+}
+#button2:hover {
+    background-color: #1e8fff24;
+}
+#button3 {
+    background-color: #ffffff23;
+    transition: transform 0.3s, background-color 0.7s;
+}
+#button3:hover {
+    background-color: #1e8fff24;
+}
+#button4 {
+    background-color: #ffffff23;
+    transition: transform 0.3s, background-color 0.7s;
+}
+#button4:hover {
+    background-color: #46ff507c;
+}
 footer {
     margin: 3px 10px;
+    block-size: 80px;
     backdrop-filter: blur(4px);
     background-repeat: no-repeat;
     background-attachment: fixed;
     border: 1px solid rgba(128, 236, 255, 0.24);
     border-radius: 50px;
     background:
-    radial-gradient(circle, rgba(255, 0, 0, 0) 80%, rgba(255,255,255,0.5) 100%) border-box;
+    radial-gradient(ellipse, rgba(255, 0, 0, 0) 60%, rgba(255,255,255,0.5) 100%) border-box;
     font-size: 20px;
+    -webkit-text-fill-color: white;
 }
 .marca {
     text-align: left;
