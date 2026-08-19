@@ -1,196 +1,245 @@
 html {
-    scroll-behavior: smooth;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 a:any-link {
-    text-decoration: none;
+  text-decoration: none;
 }
 a {
-    margin: 50px;
-    position: relative;
-    right: 50px;
-    -webkit-text-fill-color: black;
+  position: relative;
+  right: 50px;
+  -webkit-text-fill-color: black;
 }
 .site-header {
-  position:fixed;
-  z-index:20;
+  position: fixed;
+  z-index: 20;
   top: 0;
-  left:0;
-  width:100%;
-  height:88px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  padding:0 0;
-  background: rgba(101, 137, 179, 0.479);
-  border-bottom:1px solid transparent;
+  left: 2px;
+  width: 99dvw;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0;
+  background: #6c91a823;
+  box-shadow:
+    inset 2px 2px 1px 0 rgba(255, 255, 255, 0.5),
+    inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
   border-radius: 10px;
-  transition: background .3s ease, height .3s ease, border-color .3s ease;
+  transition:
+    background 0.3s ease,
+    height 0.3s ease,
+    border-color 0.3s ease;
 }
 .site-header.is-scrolled {
-    height: 70px;
-    background: rgba(101, 137, 179, 0.479);
-    backdrop-filter: blur(5px);
-    box-shadow: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.5),
+  height: 70px;
+  background: #00000023;
+  backdrop-filter: blur(5px);
+  box-shadow:
+    inset 2px 2px 1px 0 rgba(255, 255, 255, 0.5),
     inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
 }
 .site-shell {
-    margin-top: 90px;
+  margin-top: 90px;
 }
 
 body {
-    background-color: rgba(110, 203, 226, 0.88);
-    background-image: url(Background.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size:cover;
-}
-#Home {
-    background-color: #429EFC93;
-    
-}
-#Sobre {
-    background-color: #429EFC93;
-}
-#Trabalhos {
-    background-color: #429EFC93;
-    margin-bottom: 20px;
-}
-#Experiências {
-    background-color: #429EFC93;
-}
-#CONTATO {
-    background-color: #3DFC6193;
-    margin: 3px 10px;
-    font-size: 40px;
-    text-align: center;
-}
-h1 {
-    -webkit-text-fill-color: white;
-    text-shadow: 3px 4px 8px black;
-    font-size: 45px;
-    margin: 50px;
-    padding: 50px;
-    text-align: center;
-}
-h2 {
-    -webkit-text-fill-color: white;
-    text-shadow: 3px 4px 4px black;
-}
-p {
-    margin: 50px;
-    text-align: center;
-    -webkit-text-fill-color: rgb(231, 231, 231);
-    text-shadow: 3px 4px 4px black;
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: rgba(110, 203, 226, 0.88);
+  background-image: url(Background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 section {
-    margin: 3px 10px;
-    block-size: 600px;
-    backdrop-filter: blur(4px);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border: 1px solid rgba(128, 236, 255, 0.24);
-    border-radius: 50px;
-    background:
-    radial-gradient(ellipse, rgba(255, 0, 0, 0) 60%, rgba(255,255,255,0.5) 100%) border-box;
+  margin: 3px 10px;
+  width: 97.3dvw;
+  height: 90dvh;
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border: 1px solid rgba(128, 236, 255, 0.24);
+  border-radius: 50px;
+  background: radial-gradient(
+      ellipse,
+      rgba(255, 0, 0, 0) 60%,
+      rgba(255, 255, 255, 0.5) 100%
+    )
+    border-box;
+}
+#Home {
+  background-color: #23c1fc93;
+}
+#Sobre {
+  background-color: #23bfd093;
+}
+#Trabalhos {
+  background-color: #23bda493;
+  margin-bottom: 20px;
+}
+#Experiências {
+  background-color: #23ba7793;
+}
+#CONTATO {
+  background-color: #23b84b93;
+  font-size: 40px;
+  text-align: center;
+}
+h1 {
+  -webkit-text-fill-color: white;
+  text-shadow: 3px 4px 8px black;
+  font-size: 4rem;
+  padding: 50px;
+  text-align: center;
+}
+h2 {
+  -webkit-text-fill-color: white;
+  text-shadow: 3px 4px 4px black;
+}
+p {
+  margin: 50px;
+  text-align: center;
+  -webkit-text-fill-color: rgb(231, 231, 231);
+  text-shadow: 3px 4px 4px black;
 }
 .title {
-    -webkit-text-fill-color: white;
-    text-shadow: 3px 4px 8px black;
-    font-size: 45px;
-    margin: 50px;
+  -webkit-text-fill-color: white;
+  text-shadow: 3px 4px 8px black;
+  font-size: 3rem;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
 }
 .text {
-    font-size: 30px;
+  font-size: 2rem;
 }
 .information {
-    font-size: 25px;
-    margin: 50px;
-    width: 500px;
-    position: relative;
-    left: 700px;
-    -webkit-text-fill-color: rgb(255, 255, 255);
-    text-shadow: 3px 4px 4px black;
+  font-size: 2.5rem;
+  width: 50dvw;
+  -webkit-text-fill-color: rgb(255, 255, 255);
+  text-shadow: 3px 4px 4px black;
+}
+.list {
+  font-size: 2.5rem;
+  margin: 50px 0 0 8rem;
+  width: 50dvw;
+  -webkit-text-fill-color: rgb(255, 255, 255);
+  text-shadow: 3px 4px 4px black;
 }
 .name {
-    padding: 40px;
-    font-size: 2rem;
-    font-weight: bold;
-    -webkit-text-fill-color: black;
-    letter-spacing: 0px;
-    transition: letter-spacing 1s;
+  padding: 90px;
+  font-size: 2rem;
+  font-weight: bold;
+  -webkit-text-fill-color: black;
+  letter-spacing: 0px;
+  transition: letter-spacing 1s;
 }
 .name:hover {
-    letter-spacing: 1px;
+  letter-spacing: 1px;
 }
 .button {
-    -webkit-text-fill-color: black;
-    font-weight: bold;
-    display: inline-block;
-    padding: 15px 30px;
-    backdrop-filter: blur(3px);
-    border: 1px solid rgba(128, 236, 255, 0.24);
-    border-radius: 50px;
-    background:
-    radial-gradient(circle, rgba(165, 230, 255, 0.219) 80%, rgba(255,255,255,0.5) 100%) border-box;
-    transform: scale(1);
-    transition: transform 0.3s;
+  margin: 30px;
+  -webkit-text-fill-color: black;
+  font-weight: bold;
+  display: inline-block;
+  padding: 15px 30px;
+  backdrop-filter: blur(3px);
+  border: 1px solid #80ecff23;
+  border-radius: 50px;
+  background: radial-gradient(
+      circle,
+      rgba(165, 230, 255, 0.219) 80%,
+      rgba(255, 255, 255, 0.5) 100%
+    )
+    border-box;
+  transform: scale(1);
+  transition: transform 0.3s;
 }
 .button:hover {
-    transform: scale(1.06);
+  transform: scale(1.06);
 }
 .button:active {
-    transform: scale(0.98);
+  transform: scale(0.98);
 }
 #button1 {
-    background-color: #ffffff23;
-    transition: transform 0.3s, background-color 0.7s;
+  background-color: #ffffff23;
+  transition:
+    transform 0.3s,
+    background-color 0.3s;
 }
 #button1:hover {
-    background-color: #1e8fff24;
+  background-color: #3db5ff30;
+}
+#button1:active {
+  background-color: #3db5ff95;
 }
 #button2 {
-    background-color: #ffffff23;
-    transition: transform 0.3s, background-color 0.7s;
+  background-color: #ffffff23;
+  transition:
+    transform 0.3s,
+    background-color 0.7s;
 }
 #button2:hover {
-    background-color: #1e8fff24;
+  background-color: #1e8fff24;
+}
+#button2:active {
+  background-color: #3db5ff95;
 }
 #button3 {
-    background-color: #ffffff23;
-    transition: transform 0.3s, background-color 0.7s;
+  background-color: #ffffff23;
+  transition:
+    transform 0.3s,
+    background-color 0.7s;
 }
 #button3:hover {
-    background-color: #1e8fff24;
+  background-color: #1e8fff24;
+}
+#button3:active {
+  background-color: #3db5ff95;
 }
 #button4 {
-    background-color: #ffffff23;
-    transition: transform 0.3s, background-color 0.7s;
+  background-color: #ffffff23;
+  transition:
+    transform 0.3s,
+    background-color 0.7s;
 }
 #button4:hover {
-    background-color: #46ff507c;
+  background-color: #46ff507c;
+}
+#button4:active {
+  background-color: #3db5ff95;
 }
 footer {
-    margin: 3px 10px;
-    block-size: 80px;
-    backdrop-filter: blur(4px);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border: 1px solid rgba(128, 236, 255, 0.24);
-    border-radius: 50px;
-    background:
-    radial-gradient(ellipse, rgba(255, 0, 0, 0) 60%, rgba(255,255,255,0.5) 100%) border-box;
-    font-size: 20px;
-    -webkit-text-fill-color: white;
+  font-size: 20px;
+  -webkit-text-fill-color: white;
+  margin: 3px 10px;
+  block-size: 80px;
+  backdrop-filter: blur(4px);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border: 1px solid rgba(128, 236, 255, 0.24);
+  background: radial-gradient(
+      ellipse,
+      rgba(255, 0, 0, 0) 60%,
+      rgba(255, 255, 255, 0.5) 100%
+    )
+    border-box;
+  background-color: #00000023;
 }
 .marca {
-    text-align: left;
-    position: relative;
-    left: 70px;
+  text-align: left;
+  position: relative;
+  left: 70px;
 }
 .contato {
-    -webkit-text-fill-color: rgb(231, 231, 231);
-    text-shadow: 3px 4px 4px black;
-    font-weight: bold;
+  -webkit-text-fill-color: rgb(231, 231, 231);
+  text-shadow: 3px 4px 4px black;
+  font-weight: bold;
+  letter-spacing: 0px;
+  transition: letter-spacing 1s;
+}
+.contato:hover {
+  letter-spacing: 1px;
 }
