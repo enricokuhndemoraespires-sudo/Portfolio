@@ -87,7 +87,7 @@ section {
 #Sobre {
   background-color: #98e3fe60;
   backdrop-filter: blur(4px);
-  height: 80rem;
+  height: 60rem;
 }
 #Trabalhos {
   background-color: #71d8fe70;
@@ -141,6 +141,7 @@ p {
 }
 .list {
   display: flex;
+  gap: 50px;
   position: relative;
   bottom: 6rem;
   font-size: 2.5rem;
@@ -166,6 +167,11 @@ p {
     rgba(39, 39, 39, 0.5) 100%
   );
 }
+
+.info {
+  min-width: 600px;
+}
+
 .name {
   padding: 6rem;
   font-size: 2rem;
