@@ -49,10 +49,6 @@ video {
     inset 2px 2px 1px 0 rgba(255, 255, 255, 0.5),
     inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
 }
-.site-shell {
-  margin-top: 90px;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -79,6 +75,9 @@ section {
     rgba(255, 0, 0, 0) 60%,
     rgba(255, 255, 255, 0.5) 100%
   );
+}
+#Top {
+  height: 6rem;
 }
 #Home {
   background-color: #bfeeff50;
@@ -173,7 +172,7 @@ p {
 }
 
 .name {
-  padding: 6rem;
+  padding: 0 6rem;
   font-size: 2rem;
   font-weight: bold;
   -webkit-text-fill-color: black;
@@ -312,5 +311,13 @@ footer {
   scale: 0.9;
   height: 40rem;
   border-radius: 50px;
+  box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.329);
+}
+.Liberato {
+  margin: 0 1rem;
+  scale: 0.9;
+  height: 35rem;
+  width: 100rem;
+  border-radius: 20px;
   box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.329);
 }
